@@ -1,0 +1,485 @@
+<html data-wf-domain="multiagentbase-pro-93abd0.webflow.io" data-wf-page="6720d5a1dfc42e9ffb692744" data-wf-site="671f853ddffcbf80b55f0771" data-wf-status="1" class="w-mod-js w-mod-ix wf-montserrat-n1-active wf-montserrat-n2-active wf-montserrat-n3-active wf-montserrat-n4-active wf-montserrat-n5-active wf-montserrat-n6-active wf-montserrat-n7-active wf-montserrat-n8-active wf-montserrat-n9-active wf-montserrat-i6-active wf-montserrat-i8-active wf-montserrat-i7-active wf-montserrat-i4-active wf-montserrat-i1-active wf-montserrat-i5-active wf-montserrat-i2-active wf-montserrat-i3-active wf-montserrat-i9-active wf-oswald-n3-active wf-oswald-n6-active wf-oswald-n7-active wf-oswald-n5-active wf-oswald-n4-active wf-oswald-n2-active wf-bebasneue-n4-active wf-active"><head><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><meta charset="utf-8"><title>dashboard</title><meta content="dashboard" property="og:title"><meta content="dashboard" property="twitter:title"><meta content="width=device-width, initial-scale=1" name="viewport"><meta content="Webflow" name="generator"><link href="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/css/multiagentbase-pro-93abd0.webflow.444ba82e2.css" rel="stylesheet" type="text/css"><link href="https://fonts.googleapis.com" rel="preconnect"><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"><script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic%7COswald:200,300,400,500,600,700%7CBebas+Neue:regular&amp;subset=latin,latin-ext" media="all"><script type="text/javascript">WebFont.load({  google: {    families: ["Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic","Oswald:200,300,400,500,600,700","Bebas Neue:regular:latin,latin-ext"]  }});</script><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://cdn.prod.website-files.com/img/favicon.ico" rel="shortcut icon" type="image/x-icon"><link href="https://cdn.prod.website-files.com/img/webclip.png" rel="apple-touch-icon"><style>
+  .div-block-4:hover{
+  cursor:pointer;
+  }
+  
+  .hovered:hover{
+  cursor:pointer;
+  }
+  
+  .loader {
+  border: 6px solid #f3f3f3; /* Light grey */
+  border-top: 6px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+ </head><body class="body-5"><div class="modalwrapper filter"><div class="popup-backhround"><div class="div-block-53"><div class="text-block-32">Filter</div><div class="text-block-49">Filter Results by status</div><div class="div-block-90"><div class="statusdiv"><img loading="lazy" src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/672bc4c33c84efc25ac0c353_Vector%20(23).png" alt="" class="image-20"><div class="text-block-50">Active</div></div><div class="statusdiv whitecolor"><img loading="lazy" src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/672bc4c33c84efc25ac0c353_Vector%20(23).png" alt="" class="image-20 hidden"><div class="text-block-50 white">Active</div></div><div class="statusdiv whitecolor"><img loading="lazy" src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/672bc4c33c84efc25ac0c353_Vector%20(23).png" alt="" class="image-20 hidden"><div class="text-block-50 white">Active</div></div><div class="statusdiv whitecolor"><img loading="lazy" src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/672bc4c33c84efc25ac0c353_Vector%20(23).png" alt="" class="image-20 hidden"><div class="text-block-50 white">Active</div></div></div><div class="form-block-2 w-form"><form id="email-form" name="email-form" data-name="Email Form" method="get" class="form-2" data-wf-page-id="6720d5a1dfc42e9ffb692744" data-wf-element-id="18f4473f-69c1-6f7a-370a-ec73eddcb38b" aria-label="Email Form"><div class="div-block-55"><div data-w-id="18f4473f-69c1-6f7a-370a-ec73eddcb38d" class="text-block-34">Cancel</div><input type="submit" data-wait="Please wait..." class="submit-button-3 w-button" value="Apply"></div></form><div class="w-form-done" tabindex="-1" role="region" aria-label="Email Form success"><div>Thank you! Your submission has been received!</div></div><div class="w-form-fail" tabindex="-1" role="region" aria-label="Email Form failure"><div>Oops! Something went wrong while submitting the form.</div></div></div></div></div></div><div class="modalwrapper create-agent"><div class="popup-backhround"><div class="div-block-53"><div class="text-block-32">New Connection</div><div class="form-block-2 w-form"><form id="email-form" name="email-form" data-name="Email Form" method="get" class="form-2" data-wf-page-id="6720d5a1dfc42e9ffb692744" data-wf-element-id="f612e29f-2648-a724-3252-86080690da33" aria-label="Email Form"><input class="text-field-5 w-input" maxlength="256" name="name-2" data-name="Name 2" placeholder="Agent Name" type="text" id="name-2"><select id="Agent-Type-2" name="Agent-Type-2" data-name="Agent Type 2" class="select-field w-select"><option value="">Agent Type</option><option value="First">Agent 1</option><option value="Second">Agent 2</option><option value="Third">Agent 3</option></select><select id="Mode-2" name="Mode-2" data-name="Mode 2" class="select-field w-select"><option value="">Mode</option><option value="First">Agent 1</option><option value="Second">Agent 2</option><option value="Third">Agent 3</option></select><select id="Temparature-2" name="Temparature-2" data-name="Temparature 2" class="select-field w-select"><option value="">Temparature</option><option value="First">Agent 1</option><option value="Second">Agent 2</option><option value="Third">Agent 3</option></select><textarea id="field-2" name="field-2" maxlength="5000" data-name="Field 2" placeholder="Welcome Message" class="textarea w-input"></textarea><textarea id="field-2" name="field-2" maxlength="5000" data-name="Field 2" placeholder="Prompt" class="textarea w-input"></textarea><div class="div-block-54"><div class="div-block-57"><input type="file" id="input_file" accept="image/*" class="div-2 imgs"><label for="input_file" class="div-2 lols"></label><img loading="lazy" src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/672a42f6079bc89ff00cd21e_Vector%20(21).png" alt="" class="image-12"><div class="text-block-35">Icon</div></div><div class="div-block-57"><input type="file" id="input_file2" accept="image/*" class="div-3 upload"><label for="input_file2" class="div-3 label"></label><img loading="lazy" src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/672a42f6079bc89ff00cd21e_Vector%20(21).png" alt="" class="image-12"></div></div><div class="div-block-55"><div data-w-id="f612e29f-2648-a724-3252-86080690da46" class="text-block-34">Cancel</div><input type="submit" data-wait="Please wait..." class="submit-button-3 w-button" value="Create"></div></form><div class="w-form-done" tabindex="-1" role="region" aria-label="Email Form success"><div>Thank you! Your submission has been received!</div></div><div class="w-form-fail" tabindex="-1" role="region" aria-label="Email Form failure"><div>Oops! Something went wrong while submitting the form.</div></div></div></div></div></div><div class="modalwrapper new-task"><div class="popup-backhround"><div class="div-block-53"><div class="text-block-32">New Task</div><div class="form-block-2 w-form"><form id="email-form" name="email-form" data-name="Email Form" method="get" class="form-2" data-wf-page-id="6720d5a1dfc42e9ffb692744" data-wf-element-id="7a6f5f50-83d4-6e6c-30be-bbfbc116ee16" aria-label="Email Form"><input class="text-field-5 w-input" maxlength="256" name="name-2" data-name="Name 2" placeholder="Task Name" type="text" id="name-2"><select id="Select-Trigger-Agent-2" name="Select-Trigger-Agent-2" data-name="Select Trigger Agent 2" class="select-field w-select"><option value="">Select Trigger Agent</option><option value="First">Agent 1</option><option value="Second">Agent 2</option><option value="Third">Agent 3</option></select><textarea id="field-2" name="field-2" maxlength="5000" data-name="Field 2" placeholder="Description" class="textarea w-input"></textarea><div class="text-block-33">Maximum Runs</div><div class="div-block-54"></div><div class="div-block-55"><div data-w-id="7a6f5f50-83d4-6e6c-30be-bbfbc116ee1e" class="text-block-34">Cancel</div><input type="submit" data-wait="Please wait..." class="submit-button-3 w-button" value="Create"></div></form><div class="w-form-done" tabindex="-1" role="region" aria-label="Email Form success"><div>Thank you! Your submission has been received!</div></div><div class="w-form-fail" tabindex="-1" role="region" aria-label="Email Form failure"><div>Oops! Something went wrong while submitting the form.</div></div></div></div></div></div><div class="div-block"><div class="div-block-2"><div class="div-block-6"><img src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/6720e3f3aa3c2acb88965b2c_Logo.png" loading="lazy" alt=""><div class="div-block-5"></div><section id="navigateDiv" class="div-block-4 faded-background"><img src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/6720db79ef5d7168b0ca2ab0_Vector%20(14).png" loading="lazy" alt="" class="image-4"><div class="text-block-12">Dashboard</div></section><div id="agent_page" class="div-block-4 faded-background"><img src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/6720df23623d1e77107f7c1c_Vector%20(15).png" loading="lazy" alt="" class="image-4"><div class="text-block-12">Agents</div></div><div id="task_page" class="div-block-4 faded-background tasks"><img src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/6720df3a3395e9f964bfa74e_Vector%20(16).png" loading="lazy" alt="" class="image-4"><div class="text-block-12">Tasks</div></div><div id="analytic_page" class="div-block-4 faded-background"><img src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/6720df5196bd053f158ccffe_Vector%20(17).png" loading="lazy" alt="" class="image-4"><div class="text-block-12">Analytics</div></div><div id="settings_page" class="div-block-4 faded-background"><img src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/6720df5fdfc42e9ffb72de86_Vector%20(18).png" loading="lazy" alt="" class="image-4"><div class="text-block-12">Settings</div></div></div><div class="div-block-6"><div class="div-block-5"></div><div class="div-block-4 faded-background transparent"><img src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/6720e867fd87ca4a5040475e_Rectangle%2015.png" loading="lazy" alt="" class="personal_picture"><div class="div-block-7"><div class="text-block-12 align-left">Michaela Oliver</div><div class="text-block-12 align-left">mikeoliver@gmail.com</div></div></div></div></div><div class="div-block-3"><div class="dashbaordgroup"><div class="appbar"><div data-animation="over-left" data-collapse="small" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav"><div class="container-2 w-container"><nav role="navigation" class="nav-menu w-nav-menu"><img loading="lazy" src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/6720e3f3aa3c2acb88965b2c_Logo.png" alt=""><div class="div-block-5"></div><section id="navigateDiv" class="div-block-4 faded-background sidenav"><img loading="lazy" src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/6720db79ef5d7168b0ca2ab0_Vector%20(14).png" alt="" class="image-4"><div class="text-block-12">Dashboard</div></section><div id="agent_page" class="div-block-4 faded-background sidenav"><img loading="lazy" src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/6720df23623d1e77107f7c1c_Vector%20(15).png" alt="" class="image-4"><div class="text-block-12">Agents</div></div><div id="task_page" class="div-block-4 faded-background sidenav"><img loading="lazy" src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/6720df3a3395e9f964bfa74e_Vector%20(16).png" alt="" class="image-4"><div class="text-block-12">Tasks</div></div><div id="analytic_page" class="div-block-4 faded-background sidenav"><img loading="lazy" src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/6720df5196bd053f158ccffe_Vector%20(17).png" alt="" class="image-4"><div class="text-block-12">Analytics</div></div><div id="settings_page" class="div-block-4 faded-background sidenav"><img loading="lazy" src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/6720df5fdfc42e9ffb72de86_Vector%20(18).png" alt="" class="image-4"><div class="text-block-12">Settings</div></div><div class="div-block-6 sidenav"><div class="div-block-5"></div><div class="div-block-4 faded-background transparent"><img loading="lazy" src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/6720e867fd87ca4a5040475e_Rectangle%2015.png" alt="" class="personal_picture"><div class="div-block-7"><div class="text-block-12 align-left">Michaela Oliver</div><div class="text-block-12 align-left">mikeoliver@gmail.com</div></div></div></div></nav><div class="menu-button w-nav-button" style="-webkit-user-select: text;" aria-label="menu" role="button" tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false"><img src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/672c6b029cfc0abf11c85dfb_Buttons.png" loading="lazy" width="48" height="48" alt="" class="image-25"></div></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div></div><div class="greeting"><div class="text-block-13">Welcome Back</div><div id="thesiteusername" class="text-block-14">Michaela</div></div></div><div class="div-block-9"><div class="div-block-10"><img src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/67234596b4d90417abb0bd6b_Thumbnail.png" loading="lazy" alt="" class="image-5"><div class="text-block-14 size-20">Multi Agents</div><p class="paragraph-2">Multiple AI agents working together to solve complex tasks, enhance decision-making, and improve efficiency through teamwork and coordination</p></div><div class="div-block-10"><img src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/672347fabd86f1e2afe16ae5_Thumbnail%20(1).png" loading="lazy" alt="" class="image-5"><div class="text-block-14 size-20">Voice Agents</div><p class="paragraph-2">Empowering users with hands-free, voice-driven interactions, delivering instant responses, personalized experiences, and real-time assistance through natural language understanding.</p></div><div class="div-block-10"><img src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/67234818b4d90417abb30854_Thumbnail%20(2).png" loading="lazy" alt="" class="image-5"><div class="text-block-14 size-20">Video Agents</div><p class="paragraph-2">Multiple AI agents working together to solve complex tasks, enhance decision-making, and improve efficiency through teamwork and coordination</p></div><div class="div-block-10"><img src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/6723482d910c0199ef88fea1_Thumbnail%20(3).png" loading="lazy" alt="" class="image-5"><div class="text-block-14 size-20">Web Agents</div><p class="paragraph-2">Multiple AI agents working together to solve complex tasks, enhance decision-making, and improve efficiency through teamwork and coordination</p></div></div><div class="div-block-11 tasks"><div class="div-block-12"><img src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/67234e257c85196bf3b2bd60_CaretDown.png" loading="lazy" alt="" class="image-6"><div class="text-block-15">Tasks</div></div><div class="div-block-13"><div class="div-block-14"><img src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/672350fc48c7174a947a269d_search.png" loading="lazy" alt="" class="image-7"><input placeholder="search" id="searchInput1" class="input"></div><img src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/6723551f61a0dd3fa884cf30_Buttons.png" loading="lazy" data-w-id="1ca8364e-f874-2b2a-c52f-bfe7b95f406f" alt="" class="image-8"><div data-w-id="5d278c40-a988-6067-4338-ab4f7e11fedd" class="div-block-14 centerfocus"><img src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/67235655ddb524557cecd2e5_Vector%20(19).png" loading="lazy" alt="" class="image-7"><div class="text-block-16">New Task</div></div><img src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/672356bbb22ff4c6adb74ce5_Buttons%20(2).png" loading="lazy" alt="" class="image-8 more"></div></div><div class="div-block-15 tasks"><div class="w-embed"><style>
+.table-container {
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            background-color: #222436;
+            border: 1px solid #a09898;
+            box-shadow: 0 4px 10px #00000033;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            text-align: left;
+            color: #e0e0e0;
+        }
+
+        th {
+            background-color: #1e2030;
+            font-size: 0.9em;
+            border-bottom: 1px solid #a09898;
+            /* White border under the header */
+        }
+
+        tr:nth-child(even) {
+            background-color: #1a1b26;
+        }
+
+        .checkbox-cell {
+            width: 5%;
+            text-align: center;
+        }
+
+        .checkbox-cell input[type="checkbox"] {
+            accent-color: #a26bfa;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .task-name-cell {
+            width: 40%;
+        }
+
+        .task-name {
+            display: flex;
+            flex-direction: column;
+            font-size: 0.9em;
+            color: #c8c8c8;
+        }
+
+        .task-name .task-title {
+            font-weight: bold;
+            color: #e0e0e0;
+        }
+
+        .status-cell {
+            width: 20%;
+            display: flex;
+            align-items: center;
+        }
+
+        .status-box {
+            display: flex;
+            align-items: center;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .status-active {
+            background-color: #4cd137;
+        }
+
+        .status-offline {
+            background-color: #bdc3c7;
+        }
+
+        .status-wait {
+            background-color: #f39c12;
+        }
+
+        .status-box .status-icon {
+            width: 12px;
+            height: 12px;
+            margin-right: 8px;
+            border-radius: 50%;
+        }
+
+        .status-active .status-icon {
+            background-color: #fff;
+        }
+
+        .status-offline .status-icon {
+            background-color: #666;
+        }
+
+        .status-wait .status-icon {
+            background-color: #fff;
+        }
+
+        .date-cell {
+            width: 20%;
+        }
+
+        .delete-cell {
+            width: 5%;
+            text-align: center;
+        }
+
+        .delete-icon {
+            color: #e74c3c;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        .delete-icon:hover {
+            color: #ff6b6b;
+        }
+
+        .status-text {
+            font-size: 0.85em;
+            color: #c8c8c8;
+        }
+</style>
+<div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Task Name</th>
+                    <th>Status</th>
+                    <th>Date</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="checkbox-cell"><input type="checkbox" checked=""></td>
+                    <td class="task-name-cell">
+                        <div class="task-name">
+                            <span class="task-title">Task #1</span>
+                            <span class="status-text">Recently Used</span>
+                        </div>
+                    </td>
+                    <td class="status-cell">
+                        <div class="status-box status-active">
+                            <span class="status-icon"></span> Active
+                        </div>
+                    </td>
+                    <td class="date-cell">10/27/24</td>
+                    <td class="delete-cell"><span class="delete-icon">🗑</span></td>
+                </tr>
+                <tr>
+                    <td class="checkbox-cell"><input type="checkbox" checked=""></td>
+                    <td class="task-name-cell">
+                        <div class="task-name">
+                            <span class="task-title">Task #2</span>
+                            <span class="status-text">Recently Used</span>
+                        </div>
+                    </td>
+                    <td class="status-cell">
+                        <div class="status-box status-active">
+                            <span class="status-icon"></span> Active
+                        </div>
+                    </td>
+                    <td class="date-cell">10/19/24</td>
+                    <td class="delete-cell"><span class="delete-icon">🗑</span></td>
+                </tr>
+                <tr>
+                    <td class="checkbox-cell"><input type="checkbox"></td>
+                    <td class="task-name-cell">
+                        <div class="task-name">
+                            <span class="task-title">Task #203</span>
+                            <span class="status-text">Recently Created</span>
+                        </div>
+                    </td>
+                    <td class="status-cell">
+                        <div class="status-box status-offline">
+                            <span class="status-icon"></span> Offline
+                        </div>
+                    </td>
+                    <td class="date-cell">9/4/16</td>
+                    <td class="delete-cell"><span class="delete-icon">🗑</span></td>
+                </tr>
+                <tr>
+                    <td class="checkbox-cell"><input type="checkbox"></td>
+                    <td class="task-name-cell">
+                        <div class="task-name">
+                            <span class="task-title">Task #101</span>
+                            <span class="status-text">Recently Used</span>
+                        </div>
+                    </td>
+                    <td class="status-cell">
+                        <div class="status-box status-wait">
+                            <span class="status-icon"></span> Wait
+                        </div>
+                    </td>
+                    <td class="date-cell">8/4/16</td>
+                    <td class="delete-cell"><span class="delete-icon">🗑</span></td>
+                </tr>
+                <tr>
+                    <td class="checkbox-cell"><input type="checkbox"></td>
+                    <td class="task-name-cell">
+                        <div class="task-name">
+                            <span class="task-title">Task #10</span>
+                            <span class="status-text">Recently Used</span>
+                        </div>
+                    </td>
+                    <td class="status-cell">
+                        <div class="status-box status-active">
+                            <span class="status-icon"></span> Active
+                        </div>
+                    </td>
+                    <td class="date-cell">7/27/13</td>
+                    <td class="delete-cell"><span class="delete-icon">🗑</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div></div></div><div class="div-block-11"><div class="div-block-12"><img src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/67234e257c85196bf3b2bd60_CaretDown.png" loading="lazy" alt="" class="image-6"><div class="text-block-15">Agents</div></div><div class="div-block-13"><div class="div-block-14"><img src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/672350fc48c7174a947a269d_search.png" loading="lazy" alt="" class="image-7"><div class="text-block-16">Search</div></div><img src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/6723551f61a0dd3fa884cf30_Buttons.png" loading="lazy" data-w-id="03bb757d-59b0-b9ac-b586-2657cf4d31fd" alt="" class="image-8"><div data-w-id="03bb757d-59b0-b9ac-b586-2657cf4d31fe" class="div-block-14 centerfocus"><img src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/67235655ddb524557cecd2e5_Vector%20(19).png" loading="lazy" alt="" class="image-7"><div class="text-block-16">Connect Agent</div></div><img src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/672356bbb22ff4c6adb74ce5_Buttons%20(2).png" loading="lazy" alt="" class="image-8 more"></div></div><div class="div-block-15 agents"><div class="w-embed"><style>
+.table-container {
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            background-color: #222436;
+            border: 1px solid #a09898;
+            box-shadow: 0 4px 10px #00000033;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            text-align: left;
+            color: #e0e0e0;
+        }
+
+        th {
+            background-color: #1e2030;
+            font-size: 0.9em;
+            border-bottom: 1px solid #a09898;
+            /* White border under the header */
+        }
+
+        tr:nth-child(even) {
+            background-color: #1a1b26;
+        }
+
+        .checkbox-cell {
+            width: 5%;
+            text-align: center;
+        }
+
+        .checkbox-cell input[type="checkbox"] {
+            accent-color: #a26bfa;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .task-name-cell {
+            width: 40%;
+        }
+
+        .task-name {
+            display: flex;
+            flex-direction: column;
+            font-size: 0.9em;
+            color: #c8c8c8;
+        }
+
+        .task-name .task-title {
+            font-weight: bold;
+            color: #e0e0e0;
+        }
+
+        .status-cell {
+            width: 20%;
+            display: flex;
+            align-items: center;
+        }
+
+        .status-box {
+            display: flex;
+            align-items: center;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .status-active {
+            background-color: #4cd137;
+        }
+
+        .status-offline {
+            background-color: #bdc3c7;
+        }
+
+        .status-wait {
+            background-color: #f39c12;
+        }
+
+        .status-box .status-icon {
+            width: 12px;
+            height: 12px;
+            margin-right: 8px;
+            border-radius: 50%;
+        }
+
+        .status-active .status-icon {
+            background-color: #fff;
+        }
+
+        .status-offline .status-icon {
+            background-color: #666;
+        }
+
+        .status-wait .status-icon {
+            background-color: #fff;
+        }
+
+        .date-cell {
+            width: 20%;
+        }
+
+        .delete-cell {
+            width: 5%;
+            text-align: center;
+        }
+
+        .delete-icon {
+            color: #e74c3c;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        .delete-icon:hover {
+            color: #ff6b6b;
+        }
+
+        .status-text {
+            font-size: 0.85em;
+            color: #c8c8c8;
+        }
+</style>
+<div class="table-container" id="table-container-agents">
+        <table id="tableagents">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Agent Name</th>
+                    <th>Status</th>
+                    <th>Date</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="tbodyagents">
+                <tr>
+                    <td class="checkbox-cell"><input type="checkbox" checked=""></td>
+                    <td class="task-name-cell">
+                        <div class="task-name">
+                            <span class="task-title">Sales Agent</span>
+                            <span class="status-text">Recently Used</span>
+                        </div>
+                    </td>
+                    <td class="status-cell">
+                        <div class="status-box status-active">
+                            <span class="status-icon"></span> Active
+                        </div>
+                    </td>
+                    <td class="date-cell">10/27/24</td>
+                    <td class="delete-cell"><span class="delete-icon">🗑</span></td>
+                </tr>
+                <tr>
+                    <td class="checkbox-cell"><input type="checkbox" checked=""></td>
+                    <td class="task-name-cell">
+                        <div class="task-name">
+                            <span class="task-title">Amazon Agent</span>
+                            <span class="status-text">Recently Used</span>
+                        </div>
+                    </td>
+                    <td class="status-cell">
+                        <div class="status-box status-active">
+                            <span class="status-icon"></span> Active
+                        </div>
+                    </td>
+                    <td class="date-cell">10/19/24</td>
+                    <td class="delete-cell"><span class="delete-icon">🗑</span></td>
+                </tr>
+                <tr>
+                    <td class="checkbox-cell"><input type="checkbox"></td>
+                    <td class="task-name-cell">
+                        <div class="task-name">
+                            <span class="task-title">X.com Agent</span>
+                            <span class="status-text">Recently Created</span>
+                        </div>
+                    </td>
+                    <td class="status-cell">
+                        <div class="status-box status-offline">
+                            <span class="status-icon"></span> Offline
+                        </div>
+                    </td>
+                    <td class="date-cell">9/4/16</td>
+                    <td class="delete-cell"><span class="delete-icon">🗑</span></td>
+                </tr>
+                <tr>
+                    <td class="checkbox-cell"><input type="checkbox"></td>
+                    <td class="task-name-cell">
+                        <div class="task-name">
+                            <span class="task-title">AgentGPT</span>
+                            <span class="status-text">Recently Used</span>
+                        </div>
+                    </td>
+                    <td class="status-cell">
+                        <div class="status-box status-wait">
+                            <span class="status-icon"></span> Wait
+                        </div>
+                    </td>
+                    <td class="date-cell">8/4/16</td>
+                    <td class="delete-cell"><span class="delete-icon">🗑</span></td>
+                </tr>
+                <tr>
+                    <td class="checkbox-cell"><input type="checkbox"></td>
+                    <td class="task-name-cell">
+                        <div class="task-name">
+                            <span class="task-title">PicEdit Agent</span>
+                            <span class="status-text">Recently Used</span>
+                        </div>
+                    </td>
+                    <td class="status-cell">
+                        <div class="status-box status-active">
+                            <span class="status-icon"></span> Active
+                        </div>
+                    </td>
+                    <td class="date-cell">7/27/13</td>
+                    <td class="delete-cell"><span class="delete-icon">🗑</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>"</div></div><div class="div-block-58"><div class="div-block-59"><div class="div-block-61"><img src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/672b517497cebc5d6dda8d86_Home.png" loading="lazy" alt="" class="image-13"><img src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/672b51956f8cb10c8b0c2faa_Chevron.png" loading="lazy" alt="" class="image-13"><div class="text-block-36">Agents</div></div><div class="div-block-62"><img src="https://cdn.prod.website-files.com/671f853ddffcbf80b55f0771/6720e3f3aa3c2acb88965b2c_Logo.png" loading="lazy" alt="" class="image-14"></div></div><div class="div-block-59"><div class="div-block-61"><div class="text-block-37">@2024 MultiAgentBasePro, all rights reserved</div></div><div class="div-block-62"><div class="text-block-38">Privacy</div><div class="text-block-38">Terms and Conditions</div></div></div></div></div></div></div><script src="index.js"></script>
+<a class="w-webflow-badge" href="https://webflow.com?utm_campaign=brandjs"><img src="https://d3e54v103j8qbb.cloudfront.net/img/webflow-badge-icon-d2.89e12c322e.svg" alt="" style="margin-right: 4px; width: 26px;"><img src="https://d3e54v103j8qbb.cloudfront.net/img/webflow-badge-text-d2.c82cec3b78.svg" alt="Made in Webflow"></a></body></html>
